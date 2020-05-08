@@ -1,20 +1,18 @@
 {
 	"manifest_version": 2,
 	"name": "First Extension",
-	"version": 1.0,
+	"version": "0.1",
 	"content_scripts": [
 		{
 			"matches": [
-				"http://coursera.org/*",
-				"https://coursera.org/*"
+				"<all_urls>"
 			],
 			"js": ["content.js"]
 		}
-	], 
-	"background":{
-		"scripts": ["background.js"]
-	}, 
-	"browser_action": {
-		"default_icon": "icon.png"
-	}
+	],"browser_action": {
+    "default_icon": "icon.png"
+  },
+	 "background": {
+    "scripts": ["background.js"]
+  }
 }
