@@ -7,7 +7,7 @@ function received(request, sender, sendResponse){
   if(request.message === "Works"){
     var elts = document.getElementsByTagName('img');
     for (var i = 0; i < elts.length; i++) {
-      elts[i].src = 'file:///home/pilnaz/Desktop/chrome%20extensions/download.jpeg';
+      elts[i].src = chrome.extension.getURL("download.jpeg");
     }
   }
 }
